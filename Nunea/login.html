@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--JQUERY-->
+    
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <script src="https://kit.fontawesome.com/3674f6eaf9.js" crossorigin="anonymous"></script>
+    
+    <!-- Nuestro css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="/css/log.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Nunito&display=swap" rel="stylesheet">
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body background="/pictures/fondo.png">
+
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img src="/pictures/logo4.png" th:src="@{/img/user.png}"/>
+                </div>
+              
+                <form class="col-12" th:action="@{/login}" method="get">
+                <center>    <!--button  type="submit" class="button-log1 "><i class="fas fa-envelope"></i> Email</button-->
+                    <!--button  type="submit" class="button-log1 "><i class="fab fa-facebook"></i> Facebook</button-->
+                    
+                    <!--p>o</p-->
+                    <div class="form-group" id="user-group">
+                        <input type="text" class="form-control text-box" placeholder="Nombre de usuario" name="username" id="email_field"/>
+                    </div>
+                    <div class="form-group" id="contrasena-group">
+                        <input type="password" class="form-control text-box" placeholder="Contraseña" name="password" id="password_field"/>
+                    </div>
+               </center> 
+
+                    <button   class="button-log " onclick="login()"> Ingresar </button>
+                      <button  class="button-log "  > <a href="registro.html" class="al-al">Registrate</a> </button>
+                   
+     <br><br>
+                
+                </form>
+               
+
+               
+              
+            </div>
+        </div>
+    </div>
+    
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAo2DbsaNZ2SxD0k6hIC8x-B0og29DP64U",
+    authDomain: "candylearn-21f31.firebaseapp.com",
+    databaseURL: "https://candylearn-21f31.firebaseio.com",
+    projectId: "candylearn-21f31",
+    storageBucket: "candylearn-21f31.appspot.com",
+    messagingSenderId: "325316618821",
+    appId: "1:325316618821:web:3e47380eb9759f48cf512c"
+  };
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+  
+</script>
+ 
+<script src="/js/index.js"></script>
+</body>
+</html>

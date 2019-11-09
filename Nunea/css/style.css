@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	
+}
+body {
+	font-family: 'Cairo', sans-serif;
+
+	
+}
+
+
+
+/* Header */
+header {
+	background-color: #f5f8fa;
+	padding-top: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+
+
+
+ /* Helpers */
+ .mar-150-top{
+	margin-top: 150px;
+}
+.mar-50-top{
+	margin-top: 50px;
+}
+
+.mar-15-top{
+	margin-top: 15px;
+
+}
+
+.mar-5-top{
+	margin-top: 5px;
+
+}
+
+.mar-35-top{
+margin-top: 35px
+}
+
+
+/* nav bar */
+nav{
+background: #dd2e44;
+display: flex;
+justify-content: flex-end;
+}
+
+.nav-en{
+display: inline-block;
+color: #ffff;
+padding: 12px;
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;
+font-family: 'Amaranth', sans-serif;
+
+}
+
+.nav-en:hover {
+text-decoration: none;
+		color: #291425;
+
+}
+
+.color{
+	background: #dd2e44;
+}
+
+.colorBt{
+	display: inline-block;
+	
+}
+
+.colorBt button{
+	text-decoration: none;
+	color: #291425;
+	background: none;
+	color: #ffff;
+	padding: 15px;
+}
+.colorBt a{
+	color: #ffff;
+
+}
+.colorBt a:hover{
+	text-decoration: none;
+	color: #291425;
+}
+
+.drop-col{
+	color: #ffff;
+	background-color: #dd2e44;
+	text-decoration: none ;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Amaranth', sans-serif;
+    border-color: #f5f8fa;
+	
+}
+.drop-col:hover{
+	border: none;
+	color: #ffff;
+}
+
+
+.nav-boton{
+background: none;
+color: #ffff;
+padding: 12px;
+text-decoration: none;
+font-size: 18px;
+font-weight: 500;
+font-family: 'Amaranth', sans-serif;
+border: none;
+display: none;
+
+}
+.nav-boton:hover{
+border: none;
+
+}
+
+@media(max-width: 600px){
+
+nav{
+	text-align: right;
+	flex-direction: column;
+   }
+.nav-boton{
+	text-align: right;
+display: inline-block;
+}
+
+.colorBt{
+	text-align: right;
+	flex-direction: column;
+
+}
+ .desaparece{
+        display: none;
+    }
+}
+
+
+#main > .container {
+	box-shadow: 0 7px 18px rgba(0, 0, 0, .5);
+}
+
+/* photos */
+.prof{
+box-shadow: 0 5px 8px rgba(0, 0, 0, .5);
+
+}
+
+/* encabezado */
+.bg-col {
+	background-color: #dd2e44;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+	font-family: 'Amaranth', sans-serif;
+	font-size: 18px;
+	padding: 10px;
+}
+
+
+footer {
+	background-color: #226699;
+	color: #f5f8fa;
+	font-size: 15px;
+	padding: 10px 0;
+	font-family: 'Nunito', sans-serif;
+	box-shadow: 0 7px 18px rgba(0, 0, 0, .5);
+}
+
+	footer ul {
+		margin-bottom: 0;
+	}
+
+	footer a:hover {
+		color: #f5f8fa;
+		text-decoration: none;
+	}
+
+/* Helpers */
+.mar-top-80 {
+	margin-top: 80px;
+}
+
+
+/*/*/ 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+
+<!-- Fuentes -->
+
+<!-- Iconos -->
+<script src="https://kit.fontawesome.com/3674f6eaf9.js" crossorigin="anonymous"></script>
+<!-- Iconos -->
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/menu-style.css" type="text/css">
+    <link rel="stylesheet" href="/js/menu.js">
+    <title>Menu</title>
+</head>
+<body background="/pictures/fondo.png">
+
+    <header class="fixed-top">
+        <div class="menu-bar">
+                <img src="/pictures/logo1.png" alt="logo"  class="img">
+
+           <!--Los botones van al revez-->
+                <button class="btn-menu"onclick="accion()"><a href="#" class="clas-a"><i class="fas fa-bars"></i></a></button> 
+
+
+                
+          
+         
+        </div> 
+
+        <nav class="nav-en">
+            
+
+            <ul>  
+                <li><a href="#" class="dropwn" onclick="list()"><i class="fas fa-user-circle"></i> Perfil  <i class="fas fa-caret-down "></i></a> </li>
+                           
+                            <li class="dwont"> <a href="#"><i class="fas fa-user-alt"></i> Nombre_usario</a></li> 
+                            <li class="dwont"> <a href="#"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+                
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Cursos</a></li>
+                <li><a href="#"><i class="fas fa-info"></i> Ayuda</a></li>
+            </ul>
+
+             
+        </nav>
+
+    </header>
+
+<div id='main'>
+
+<div class="container mar-top-100">
+    
+        
+</div>
+</div>
+
+<br>
+<footer >
+        
+        <div class="row"> 
+      <div class="col-sm-6 ">
+      <strong>CandyLearn</strong> &copy;2019 - Sitio diseñado por <a href="#">MDG DEV</a>
+      </div>
+   
+      <div class="col-sm-6">
+      <img src="/pictures/logo1.png" width="135px">
+      </div>
+      
+      </div>
+      </footer>
+
+
+
+<script>
+        function accion(){
+            var ancla = document.getElementsByClassName('nav-en');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+
+        function list(){
+            var ancla1 = document.getElementsByClassName('dwont');
+            for(var i = 0; i < ancla1.length; i++){
+                ancla1[i].classList.toggle('dwon');
+         
+             }
+    
+
+             
+
+        }
+
+        
+</script>
+      
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+
+.main-section{
+    margin:0 auto;
+    margin-top:20%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #2e4b9b;
+    padding: 0 20px;
+    font-family: 'Amaranth', sans-serif;
+    box-shadow: 0px 0px 3px #848484;
+    background-image: url("/pictures//fondos/fondo6.png");
+    border-radius: 18px;
+ 
+}
+.user-img{
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
+.user-img img{
+    width: 180xp;
+    height: 160px;
+}
+
+.text-box{
+width: 90%;
+}
+
+.button-log {
+background: #1e927f;    
+width: 90%;
+margin-bottom:5px;
+padding: 8px;
+color: #ffff;
+font-size: 18px;
+font-family: 'Amaranth', sans-serif;
+border: none;
+border-radius: 8px; ;
+}
+
+.button-log:hover{
+background:#dd2e44;
+color: #291425;
+text-decoration: none;
+}
+
+.button-log1 {
+    background: #dd2e44;    
+    width: 90%;
+    margin-bottom:5px;
+    padding: 8px;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Amaranth', sans-serif;
+    border: none;
+    border-radius: 8px; ;
+    }
+    
+    .button-log1:hover{
+    background : #b02583;
+    color: #ffff;
+    text-decoration: none;
+    }
+
+.forgot{
+    padding: 15px;
+}
+
+.forgot a{
+    color: white;
+}
+
+.mar-top-15{
+    padding-top:15px ;
+}
+
+.a-al{
+   
+text-decoration: none;
+    margin: auto auto auto 60px;
+    font-size: 14px;
+    color: #ffff;
+     
+}
+
+.a-al:hover{
+text-decoration: none;
+color: #291425;
+}
+
+.al-al{
+   
+    text-decoration: none;
+        color: #ffff;
+    }
+    
+    .al-al:hover{
+    text-decoration: none;
+    color: #291425;
+    }
+p{
+    font-size: 15px;
+    color: #ffff;
+}
